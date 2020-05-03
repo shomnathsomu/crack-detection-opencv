@@ -14,3 +14,6 @@ imgNeg = cv2.bitwise_not(gray)
 
 # Apply logarithmic transform
 img_log = (np.log(imgNeg+1)/(np.log(1+np.max(imgNeg))))*255
+
+# Specify the data type
+img_log = np.array(img_log,dtype=np.uint8)
