@@ -17,3 +17,6 @@ img_log = (np.log(imgNeg+1)/(np.log(1+np.max(imgNeg))))*255
 
 # Specify the data type
 img_log = np.array(img_log,dtype=np.uint8)
+
+# Image smoothing: bilateral filter
+bilateral = cv2.bilateralFilter(img_log, 5, 75, 75)
