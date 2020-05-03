@@ -27,3 +27,8 @@ edges = cv2.Canny(bilateral,400,500)
 # Morphological Closing Operator
 kernel = np.ones((5,5),np.uint8)
 closing = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+
+# Create feature detecting method
+sift = cv2.xfeatures2d.SIFT_create()
+surf = cv2.xfeatures2d.SURF_create()
+orb = cv2.ORB_create(nfeatures=1500)
