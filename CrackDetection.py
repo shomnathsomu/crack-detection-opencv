@@ -32,3 +32,7 @@ closing = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
 sift = cv2.xfeatures2d.SIFT_create()
 surf = cv2.xfeatures2d.SURF_create()
 orb = cv2.ORB_create(nfeatures=1500)
+
+# Make featured Image
+keypoints, descriptors = orb.detectAndCompute(closing, None)
+featuredImg = cv2.drawKeypoints(closing, keypoints, None)
