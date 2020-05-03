@@ -36,3 +36,6 @@ orb = cv2.ORB_create(nfeatures=1500)
 # Make featured Image
 keypoints, descriptors = orb.detectAndCompute(closing, None)
 featuredImg = cv2.drawKeypoints(closing, keypoints, None)
+
+# Create an output image
+cv2.imwrite('CrackDetected.jpg', featuredImg)
