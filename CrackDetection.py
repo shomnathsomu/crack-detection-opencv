@@ -20,3 +20,6 @@ img_log = np.array(img_log,dtype=np.uint8)
 
 # Image smoothing: bilateral filter
 bilateral = cv2.bilateralFilter(img_log, 5, 75, 75)
+
+# Canny Edge Detection
+edges = cv2.Canny(bilateral,400,500)
