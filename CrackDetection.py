@@ -39,3 +39,10 @@ featuredImg = cv2.drawKeypoints(closing, keypoints, None)
 
 # Create an output image
 cv2.imwrite('CrackDetected.jpg', featuredImg)
+
+# Use plot to show original and output image
+plt.subplot(121),plt.imshow(img)
+plt.title('Original'),plt.xticks([]), plt.yticks([])
+plt.subplot(122),plt.imshow(edges,cmap='gray')
+plt.title('Edge Image'),plt.xticks([]), plt.yticks([])
+plt.show()
