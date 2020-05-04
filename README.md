@@ -1,2 +1,4 @@
-# Crack-Detection-OpenCV
-Concrete Crack Detection Using OpenCV Without Machine Learning Approach
+# Crack detection and classification using OpenCV
+
+### Abstract
+It has been seen that millions of dollars are being invested on highway maintainance and restoration all over the world. This cost can be minimized if the detection of cracks will be found as earlier as possible. As the reparation process depends on the type of cracks, so we need to take actions for next steps how it would be repaired. It would be a very good decision to repair the cracks as earliar we find it. Initially we need to capture very transperant images of the roads. Cause detections will depend on that images. So any device that will be used to scan or capture images of the roads, that must be configured for taking high resolution images. On those images, various image processing techniques are applied to extract crack information. Depending on these information, the images could be classified using some decision making algorithm. This procedure can be implemented on road CC cameras or vehicles carrying a device capture images. The accuracy depends on the images quality and accurate capture.
