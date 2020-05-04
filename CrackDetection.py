@@ -4,7 +4,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 # read a cracked sample image
-img = cv2.imread('samples/query_06.bmp')
+img = cv2.imread('Input-Set/Cracked_07.jpg')
 
 # Convert into gray scale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -22,7 +22,7 @@ img_log = np.array(img_log,dtype=np.uint8)
 bilateral = cv2.bilateralFilter(img_log, 5, 75, 75)
 
 # Canny Edge Detection
-edges = cv2.Canny(bilateral,400,500)
+edges = cv2.Canny(bilateral,100,200)
 
 # Morphological Closing Operator
 kernel = np.ones((5,5),np.uint8)
@@ -38,7 +38,7 @@ keypoints, descriptors = orb.detectAndCompute(closing, None)
 featuredImg = cv2.drawKeypoints(closing, keypoints, None)
 
 # Create an output image
-cv2.imwrite('CrackDetected.jpg', featuredImg)
+cv2.imwrite('Output-Set/CrackDetected-7.jpg', featuredImg)
 
 # Use plot to show original and output image
 plt.subplot(121),plt.imshow(img)
