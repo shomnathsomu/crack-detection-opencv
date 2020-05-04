@@ -29,8 +29,8 @@ kernel = np.ones((5,5),np.uint8)
 closing = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
 
 # Create feature detecting method
-sift = cv2.xfeatures2d.SIFT_create()
-surf = cv2.xfeatures2d.SURF_create()
+# sift = cv2.xfeatures2d.SIFT_create()
+# surf = cv2.xfeatures2d.SURF_create()
 orb = cv2.ORB_create(nfeatures=1500)
 
 # Make featured Image
@@ -44,5 +44,5 @@ cv2.imwrite('Output-Set/CrackDetected-7.jpg', featuredImg)
 plt.subplot(121),plt.imshow(img)
 plt.title('Original'),plt.xticks([]), plt.yticks([])
 plt.subplot(122),plt.imshow(featuredImg,cmap='gray')
-plt.title('Crack Detected Image'),plt.xticks([]), plt.yticks([])
+plt.title('Output Image'),plt.xticks([]), plt.yticks([])
 plt.show()
