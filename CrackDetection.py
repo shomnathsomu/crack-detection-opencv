@@ -9,11 +9,12 @@ img = cv2.imread('Input-Set/Cracked_07.jpg')
 # Convert into gray scale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# Inverting / negative image
-imgNeg = cv2.bitwise_not(gray)
+# Image processing ( smoothing )
+# Averaging
+blur = cv2.blur(gray,(3,3))
 
 # Apply logarithmic transform
-img_log = (np.log(imgNeg+1)/(np.log(1+np.max(imgNeg))))*255
+img_log = (np.log(blur+1)/(np.log(1+np.max(blur))))*255
 
 # Specify the data type
 img_log = np.array(img_log,dtype=np.uint8)
