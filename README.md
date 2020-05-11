@@ -21,3 +21,5 @@ Here the crack detection methodology can be classified into some following steps
 
 #### Image capture
 Any device can be installed on a vehicle zenith point or in a pole that is capable of capturing high resoluted imgaes of higways from any angle but focus should be perfect. If needed then the original images could be resized. Here are some examples of images on which we are going to detect cracks.
+
+<img src="Input-Set/Cracked_01.jpg" width="420" height="250"> <img src="Input-Set/Cracked_07.jpg" width="420" height="250">
