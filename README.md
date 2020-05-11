@@ -11,3 +11,13 @@ In very modern countries, they have thousands of kilometers highways. It's very 
 These cracks of the highways can be classified into some types. Depending on those cracks, authority must take actions how those would have to repair. Initially it may need to detect the location of the cracks. To perform that, a visual inspection technique is needed to capture images of the roads and then to be analyzed.
 
 So our ultimate goal is to develop a system that can be able to detect these cracks on the highways automatically.
+
+### Methodology
+Here the crack detection methodology can be classified into some following steps below:
+1. Image capture
+2. Image processing
+3. Image Segmention
+4. Feature extraction
+
+#### Image capture
+Any device can be installed on a vehicle zenith point or in a pole that is capable of capturing high resoluted imgaes of higways from any angle but focus should be perfect. If needed then the original images could be resized. Here are some examples of images on which we are going to detect cracks.
