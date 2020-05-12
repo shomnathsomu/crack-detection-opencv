@@ -1,4 +1,4 @@
-# Crack detection and classification using OpenCV
+# Crack detection using OpenCV
 
 ### Abstract
 It has been seen that millions of dollars are being invested on highway/subway tunnel maintainance and restoration all over the world. This cost can be minimized if the detection of cracks will be found as earlier as possible. As the reparation process depends on the type of cracks, so we need to take actions for next steps how it would be repaired. It would be a very good decision to repair the cracks as earliar we find it. Initially we need to capture very transperant images of the roads/concrete infrastuctures. Cause detections will depend on that images. So any device that will be used to scan or capture images of the roads/concrete infrastuctures, that must be configured for picturing high resolution images. On those images, various image processing techniques are applied to extract crack information. Depending on these information, the images could be classified using some decision making algorithm. This procedure can be implemented on images acquired by any objects or vehicles carrying image sensing terminal, laser distance sensor, image storage and processing servers, central control system and speed sensor. The accuracy depends on the images quality and accurate capture.
@@ -23,3 +23,11 @@ Here the crack detection methodology can be classified into some following steps
 Any device can be installed on a vehicle zenith point or in a pole that is capable of capturing high resoluted imgaes of higways from any angle but focus should be perfect. If needed then the original images could be resized. Here are some examples of images on which we are going to detect cracks.
 
 <img src="Input-Set/Cracked_01.jpg" width="420" height="250"> <img src="Input-Set/Cracked_07.jpg" width="420" height="250">
+
+#### Image processing
+All the steps in the processing section are being explained below. 
+
+Firstly, the images is transformed in a new one in grayscale and blur. These make the images easier to visualize the processed images in next steps. 
+
+<img src="Processed-Set/blur-1.jpg" width="420" height="250"> <img src="Processed-Set/blur-7.jpg" width="420" height="250">
+<pre>              Blurred Image                                           Blurred Image</pre>
