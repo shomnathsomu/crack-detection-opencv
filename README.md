@@ -24,24 +24,29 @@ Any device can be installed on a vehicle zenith point or in a pole that is capab
 
 <img src="Input-Set/Cracked_01.jpg" width="420" height="250"> <img src="Input-Set/Cracked_07.jpg" width="420" height="250">
 
-#### Image processing
+#### Image processing techniques
 All the steps in the processing section are being explained below. 
 
+##### Gray scaling and averaging
 Firstly, the images is transformed in a new one in grayscale and blur. These make the images easier to visualize the processed images in next steps. 
 
 <img src="Processed-Set/blur-1.jpg" width="420" height="250"> <img src="Processed-Set/blur-7.jpg" width="420" height="250">
 <pre>              Blurred Image                                           Blurred Image</pre>
 
+##### Logarithmic transformation
 Logarithmic transformation is used to replace all the pixels values of an image with its logarithmic values. This transformation is used for image enhancement as it expands dark pixels of the image as compared to higher pixel values. So if we apply this method in an image having higher pixel values then it will enhance the image more and actual information of the image will be lost. Now after applying the log transformation in to our sample blurred images, they look like below.
 
 <img src="Processed-Set/img_log-1.jpg" width="420" height="250"> <img src="Processed-Set/img_log-7.jpg" width="420" height="250">
 <pre>           Log Transformed Image                                   Log Transformed Image</pre>
 
+##### Image smoothing: bilateral filter
 The bilateral filter also uses a Gaussian filter in the space domain, but it also uses one more (multiplicative) Gaussian filter component which is a function of pixel intensity differences. This method preserves edges, since for pixels lying near edges, neighboring pixels placed on the other side of the edge, and therefore exhibiting large intensity variations when compared to the central pixel, will not be included for blurring. So the sample logarithmic transformed images become as following after applying the bilateral filtering.
 
 <img src="Processed-Set/bilateral-1.jpg" width="420" height="250"> <img src="Processed-Set/bilateral-7.jpg" width="420" height="250">
 <pre>           Bilateral Filtered Image                           Bilateral Filtered Image</pre>
 
+#### Image Segmention Techniques
+##### Canny edge detection
 Canny edge detection is a technique to extract useful structural information from different vision objects and dramatically reduce the amount of data to be processed. It uses a multi-stage algorithm to detect a wide range of edges in images. 
 Canny algorithm consists of three main steps:
 
@@ -54,6 +59,7 @@ Now we apply canny algorithm to detect the crack edges in our bilateral filtered
 <img src="Processed-Set/edges-1.jpg" width="420" height="250"> <img src="Processed-Set/edges-7.jpg" width="420" height="250">
 <pre>           Canny Edges Image                                   Canny Edges Image</pre>
 
+##### Morphological closing operator
 Morphological transformations are some simple operations based on the image shape. It is normally performed on binary images. It needs two inputs, one is our original image, second one is called structuring element or kernel which decides the nature of operation. 
 
 There are many different types of morphological filtering, but after analyzing the results, the best filter for this detection is the closing filter. Closing filter helps to fill minor gaps in the image making the main crack continuous and more detailed. It is useful in closing small holes inside the foreground objects, or small black points on the object. Closing filter is defined as a dilation followed by an erosion.
