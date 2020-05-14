@@ -32,7 +32,12 @@ Firstly, the images is transformed in a new one in grayscale and blur. These mak
 <img src="Processed-Set/blur-1.jpg" width="420" height="250"> <img src="Processed-Set/blur-7.jpg" width="420" height="250">
 <pre>              Blurred Image                                           Blurred Image</pre>
 
-Logarithmic transformation is used to replace all the pixels values of an image with its logarithmic values. This transformation is used for image enhancement as it expands dark pixels of the image as compared to higher pixel values. So if we apply this method in an image having higher pixel values then it will enhance the image more and actual information of the image will be lost. Now after applying the log transformation in to our sample images, they look like below.
+Logarithmic transformation is used to replace all the pixels values of an image with its logarithmic values. This transformation is used for image enhancement as it expands dark pixels of the image as compared to higher pixel values. So if we apply this method in an image having higher pixel values then it will enhance the image more and actual information of the image will be lost. Now after applying the log transformation in to our sample blurred images, they look like below.
 
 <img src="Processed-Set/img_log-1.jpg" width="420" height="250"> <img src="Processed-Set/img_log-7.jpg" width="420" height="250">
-<pre>           Log transformed Image                                   Log transformed Image</pre>
+<pre>           Log Transformed Image                                   Log Transformed Image</pre>
+
+The bilateral filter also uses a Gaussian filter in the space domain, but it also uses one more (multiplicative) Gaussian filter component which is a function of pixel intensity differences. This method preserves edges, since for pixels lying near edges, neighboring pixels placed on the other side of the edge, and therefore exhibiting large intensity variations when compared to the central pixel, will not be included for blurring. So the sample logarithmic transformed images become as following after applying the bilateral filtering.
+
+<img src="Processed-Set/bilateral-1.jpg" width="420" height="250"> <img src="Processed-Set/bilateral-7.jpg" width="420" height="250">
+<pre>           Bilateral Filtered Image                                   Bilateral Filtered Image</pre>
