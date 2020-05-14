@@ -53,3 +53,12 @@ Now we apply canny algorithm to detect the crack edges in our bilateral filtered
 
 <img src="Processed-Set/edges-1.jpg" width="420" height="250"> <img src="Processed-Set/edges-7.jpg" width="420" height="250">
 <pre>           Canny Edges Image                                   Canny Edges Image</pre>
+
+Morphological transformations are some simple operations based on the image shape. It is normally performed on binary images. It needs two inputs, one is our original image, second one is called structuring element or kernel which decides the nature of operation. 
+
+There are many different types of morphological filtering, but after analyzing the results, the best filter for this detection is the closing filter. Closing filter helps to fill minor gaps in the image making the main crack continuous and more detailed. It is useful in closing small holes inside the foreground objects, or small black points on the object. Closing filter is defined as a dilation followed by an erosion.
+
+Here we go to apply the morphological closing operator onto our canny edges detected images.
+
+<img src="Processed-Set/closing-1.jpg" width="420" height="250"> <img src="Processed-Set/closing-7.jpg" width="420" height="250">
+<pre>           Morphological Closing Image                          Morphological Closing Image</pre>
