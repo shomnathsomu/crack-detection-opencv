@@ -76,3 +76,18 @@ So after applying this ORB method into our morphological closing images we get t
 
 <img src="Output-Set/CrackDetected-1.jpg" width="420" height="250"> <img src="Output-Set/CrackDetected-7.jpg" width="420" height="250">
 <pre>           Feature Detected Image                              Feature Detected Image</pre>
+
+### References
+1. M Ann, P Johnson, Best Practices Handbook on asphalt pavement maintenance.Minnesota Technology Transfer (T2) Center / LTAP Program (2000). http://www.cee.mtu.edu/~balkire/CE5403/AsphaltPaveMaint.pdf.
+
+2. TD Donald Walker, Pavement Surface Evaluation and Rating (PASER) Manuals (Wisconsin Transportation Information Center, Wisconsin, 2002). http://www.apa-mi.org/docs/Asphalt-PASERManual.pdf.
+
+3. RK Kay, Pavement Surface Condition - Rating Manual. Northwest Technologies Transfer Center. Northwest Technologies Transfer Center. Washington State Department of Transportation, (Washington, 1992).
+
+4. L Li, L Sun, G Ning, S Tan, Automatic pavement crack recognition based on Bp neural network. PROMET-Traffic Transp. 26(1), 11–22 (2014).
+
+5. NHTSA, National Motor Vehicle Crash Causation Survey Report to Congress, (2008). http://www-nrd.nhtsa.dot.gov/Pubs/811059.PDF, Accessed Jan 2017.
+
+6. JM Palomares, J González, E Ros, in AERFAI 2005. Detección de bordes en imágenes con sombras mediante LIP–Canny (Simposio de Reconocimiento de Formas y Análisis de Imágenes, AERFAI’2005, At Granada, 2005).
+
+7. JS Miller, RB Rogers, GR Rada, in Distress Identification Manual for the Long-Term Pavement Performance Project. Appendiz A - Pavement Distress Types and Causes (National Cooperative Highway Research Program, At NW Washington, 1993), pp. 1–31.
