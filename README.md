@@ -68,3 +68,11 @@ Here we go to apply the morphological closing operator onto our canny edges dete
 
 <img src="Processed-Set/closing-1.jpg" width="420" height="250"> <img src="Processed-Set/closing-7.jpg" width="420" height="250">
 <pre>           Morphological Closing Image                          Morphological Closing Image</pre>
+
+#### Feature extraction
+There are various types of algorithm like (SIFT, SURF, ORB) that could be used in feature detection/extraction. SIFT and SURF are patented so not free for commercial use, while ORB is free. SIFT and SURF detect more features than ORB, but ORB is faster. ORB stands for Oriented FAST and Rotated BRIEF. It combines features of FAST and BRIEF for feature extraction and description. It has very fast computational speed, efficient memory usage, and high matching accuracy. ORB can be used instead of SIFT and SURF for feature extraction. 
+
+So after applying this ORB method into our morphological closing images we get the result as following.
+
+<img src="Output-Set/CrackDetected-1.jpg" width="420" height="250"> <img src="Output-Set/CrackDetected-7.jpg" width="420" height="250">
+<pre>           Feature Detected Image                              Feature Detected Image</pre>
