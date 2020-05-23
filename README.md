@@ -77,6 +77,8 @@ So after applying this ORB method into our morphological closing images we get t
 <img src="Output-Set/CrackDetected-1.jpg" width="420" height="250"> <img src="Output-Set/CrackDetected-7.jpg" width="420" height="250">
 <pre>           Feature Detected Image                              Feature Detected Image</pre>
 
+### Result and discussion
+
 ### References
 1. M Ann, P Johnson, Best Practices Handbook on asphalt pavement maintenance.Minnesota Technology Transfer (T2) Center / LTAP Program (2000). http://www.cee.mtu.edu/~balkire/CE5403/AsphaltPaveMaint.pdf.
 
