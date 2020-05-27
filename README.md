@@ -78,6 +78,7 @@ So after applying this ORB method into our morphological closing images we get t
 <pre>           Feature Detected Image                              Feature Detected Image</pre>
 
 ### Result and discussion
+Here we tried with around twenty images of both crack and non-crack to test. Without some cases, the cracks become very visible accurately in our output image. So we can say that 80-90% accuracy can be possible if the images are very clear or transparent. From our final output images we can classify them into several crack types and some classification techniques need to be applied for that.
 
 ### References
 1. M Ann, P Johnson, Best Practices Handbook on asphalt pavement maintenance.Minnesota Technology Transfer (T2) Center / LTAP Program (2000). http://www.cee.mtu.edu/~balkire/CE5403/AsphaltPaveMaint.pdf.
