@@ -1,4 +1,4 @@
 numpy
-opencv-python==3.4.2.16
+opencv-python==3.4.7.28
 opencv-contrib-python==3.4.2.16
 matplotlib
