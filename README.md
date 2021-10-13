@@ -22,7 +22,7 @@ Here the crack detection methodology can be classified into some following steps
 #### Image capture
 Any device can be installed on a vehicle zenith point or in a pole that is capable of capturing high resoluted imgaes of higways from any angle but focus should be perfect. If needed then the original images could be resized. Here are some examples of images on which we are going to detect cracks.
 
-<img src="Input-Set/Cracked_01.jpg" width="420" height="250"> <img src="Input-Set/Cracked_07.jpg" width="420" height="250">
+<img src="Input-Set/Cracked_01.jpg" width="400" height="250"> <img src="Input-Set/Cracked_07.jpg" width="400" height="250">
 
 #### Image processing techniques
 All the steps in the processing section are being explained below. 
@@ -30,19 +30,19 @@ All the steps in the processing section are being explained below.
 ##### Gray scaling and averaging
 Firstly, the images is transformed in a new one in grayscale and blur. These make the images easier to visualize the processed images in next steps. 
 
-<img src="Processed-Set/blur-1.jpg" width="420" height="250"> <img src="Processed-Set/blur-7.jpg" width="420" height="250">
+<img src="Processed-Set/blur-1.jpg" width="400" height="250"> <img src="Processed-Set/blur-7.jpg" width="400" height="250">
 <pre>              Blurred Image                                           Blurred Image</pre>
 
 ##### Logarithmic transformation
 Logarithmic transformation is used to replace all the pixels values of an image with its logarithmic values. This transformation is used for image enhancement as it expands dark pixels of the image as compared to higher pixel values. So if we apply this method in an image having higher pixel values then it will enhance the image more and actual information of the image will be lost. Now after applying the log transformation in to our sample blurred images, they look like below.
 
-<img src="Processed-Set/img_log-1.jpg" width="420" height="250"> <img src="Processed-Set/img_log-7.jpg" width="420" height="250">
+<img src="Processed-Set/img_log-1.jpg" width="400" height="250"> <img src="Processed-Set/img_log-7.jpg" width="400" height="250">
 <pre>           Log Transformed Image                                   Log Transformed Image</pre>
 
 ##### Image smoothing: bilateral filter
 The bilateral filter also uses a Gaussian filter in the space domain, but it also uses one more (multiplicative) Gaussian filter component which is a function of pixel intensity differences. This method preserves edges, since for pixels lying near edges, neighboring pixels placed on the other side of the edge, and therefore exhibiting large intensity variations when compared to the central pixel, will not be included for blurring. So the sample logarithmic transformed images become as following after applying the bilateral filtering.
 
-<img src="Processed-Set/bilateral-1.jpg" width="420" height="250"> <img src="Processed-Set/bilateral-7.jpg" width="420" height="250">
+<img src="Processed-Set/bilateral-1.jpg" width="400" height="250"> <img src="Processed-Set/bilateral-7.jpg" width="400" height="250">
 <pre>           Bilateral Filtered Image                           Bilateral Filtered Image</pre>
 
 #### Image Segmention Techniques
@@ -56,7 +56,7 @@ Canny algorithm consists of three main steps:
 
 Now we apply canny algorithm to detect the crack edges in our bilateral filtered as following.
 
-<img src="Processed-Set/edges-1.jpg" width="420" height="250"> <img src="Processed-Set/edges-7.jpg" width="420" height="250">
+<img src="Processed-Set/edges-1.jpg" width="400" height="250"> <img src="Processed-Set/edges-7.jpg" width="400" height="250">
 <pre>           Canny Edges Image                                   Canny Edges Image</pre>
 
 ##### Morphological closing operator
@@ -66,7 +66,7 @@ There are many different types of morphological filtering, but after analyzing t
 
 Here we go to apply the morphological closing operator onto our canny edges detected images.
 
-<img src="Processed-Set/closing-1.jpg" width="420" height="250"> <img src="Processed-Set/closing-7.jpg" width="420" height="250">
+<img src="Processed-Set/closing-1.jpg" width="400" height="250"> <img src="Processed-Set/closing-7.jpg" width="400" height="250">
 <pre>           Morphological Closing Image                          Morphological Closing Image</pre>
 
 #### Feature extraction
@@ -74,7 +74,7 @@ There are various types of algorithm like (SIFT, SURF, ORB) that could be used i
 
 So after applying this ORB method into our morphological closing images we get the result as following.
 
-<img src="Output-Set/CrackDetected-1.jpg" width="420" height="250"> <img src="Output-Set/CrackDetected-7.jpg" width="420" height="250">
+<img src="Output-Set/CrackDetected-1.jpg" width="400" height="250"> <img src="Output-Set/CrackDetected-7.jpg" width="400" height="250">
 <pre>           Feature Detected Image                              Feature Detected Image</pre>
 
 ### Result and discussion
